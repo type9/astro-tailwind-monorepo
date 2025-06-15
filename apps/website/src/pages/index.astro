@@ -1,17 +1,15 @@
 ---
-import Example from '@monorepo/components/src/Example.astro';
+import BaseHead from "@monorepo/components/BaseHead.astro";
+import Footer from "@monorepo/components/Footer.astro";
 ---
 
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + Tailwind monorepo template</title>
+		<BaseHead title="Example Title" description="Example description" />
 	</head>
-	<body>
+	<body class="mt-navbar">
 		<h1 class="font-bold">Hello, world!</h1>
-		<Example />
-	</body>
+	</body><footer>
+		<Footer />
+	</footer>
 </html>

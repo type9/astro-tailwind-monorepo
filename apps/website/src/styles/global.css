@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@import "@monorepo/tw-themes/default-theme.css";
+
+@theme {
+    --spacing-navbar: calc(var(--spacing) * 12);
+}
