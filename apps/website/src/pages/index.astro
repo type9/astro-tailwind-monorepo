@@ -1,15 +1,7 @@
 ---
-import BaseHead from "@monorepo/components/BaseHead.astro";
-import Footer from "@monorepo/components/Footer.astro";
+import DefaultLayout from "@/layouts/DefaultLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<BaseHead title="Example Title" description="Example description" />
-	</head>
-	<body class="mt-navbar">
-		<h1 class="font-bold">Hello, world!</h1>
-	</body><footer>
-		<Footer />
-	</footer>
-</html>
+<DefaultLayout title="Example Title" description="Example Description">
+	<h1 class="font-bold">Hello, world!</h1>
+</DefaultLayout>

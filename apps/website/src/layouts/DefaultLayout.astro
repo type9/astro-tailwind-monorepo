@@ -11,13 +11,13 @@ const { title, description } = Astro.props;
     <BaseHead title={title} description={description} />
   </head>
   <body>
-    <nav>
+    <nav class="h-navbar">
       <a href="#">Home</a>
       <a href="#">Posts</a>
       <a href="#">Contact</a>
     </nav>
     <h1>{title}</h1>
-    <article>
+    <article class="mt-navbar">
       <slot />
       <!-- your content is injected here -->
     </article>
