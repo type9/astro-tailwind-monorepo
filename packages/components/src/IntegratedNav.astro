@@ -1,0 +1,23 @@
+---
+export type NavItem = {
+  title: string;
+  href: string;
+};
+export interface Props {
+  title: string;
+  navItems: NavItem[];
+}
+---
+
+<nav class="fixed inset-x-0 top-0 z-20">
+  <div
+    class="container transition-[padding] duration-500 ease-in-out pt-20 lg:pt-28"
+  >
+    <div class="overflow-hidden rounded-lg transition-colors">
+      <div
+        class="flex h-navbar items-center justify-between gap-32 px-20 transition-[height] duration-500 ease-in-out"
+      >
+      </div>
+    </div>
+  </div>
+</nav>

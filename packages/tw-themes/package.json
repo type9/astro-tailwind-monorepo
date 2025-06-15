@@ -3,5 +3,8 @@
   "exports": {
     "./*": "./src/*"
   },
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "dependencies": {
+    "tailwindcss": "^4.1.10"
+  }
 }

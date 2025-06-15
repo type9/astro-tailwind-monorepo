@@ -1,4 +1,5 @@
 ---
+import "../styles/global.css";
 import BaseHead from "@monorepo/components/BaseHead.astro";
 import Footer from "@monorepo/components/Footer.astro";
 const { title, description } = Astro.props;
@@ -10,7 +11,7 @@ const { title, description } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <BaseHead title={title} description={description} />
   </head>
-  <body>
+  <body class="h-[100vh] w-[100vw] bg-background-neutral">
     <nav class="h-navbar">
       <a href="#">Home</a>
       <a href="#">Posts</a>
